@@ -2,8 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 // import App5 from './App5';
-import ShoppingCart from './ShoppingCart'
-import './Shoppingcart.css'
+
+import Hook from './Hook';
+// import './Shoppingcart.css'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -24,8 +25,8 @@ root.render(
   //   <App5 />
   // </React.StrictMode>
 
-  <React.StrictMode>
-    <ShoppingCart />
- </React.StrictMode>
+  // <React.StrictMode>
+    <Hook  />
+//  </React.StrictMode> 
  
 );
