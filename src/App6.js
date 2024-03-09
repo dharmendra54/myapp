@@ -2,7 +2,7 @@ import React from "react";
 import ExpComp from "./ExpComp";
 import { useState } from "react";
 
-export default function App12() {
+export default function App6() {
   const [count, setCount] = useState(0);
   return (
     <div>

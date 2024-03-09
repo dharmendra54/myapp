@@ -1,7 +1,7 @@
 import { useState, createContext, useContext } from "react";
 import Child from "./Child";
 export const UserContext = createContext();
-export default function App13() {
+export default function App8() {
   const [user, setUser] = useState("John");
   const [email, setEmail] = useState("john@gmail.com")
   return (

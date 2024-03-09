@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
+import  {useState} from 'react';
 
 export default function Login1() {
-    const [access, setAccessState] = useState({ access: "", className: "" });
+    const [access, setAccess] = useState({ access: "", className: "" });
 
     const f1 = () => {
         let name = document.getElementById('t1').value.trim();
@@ -9,9 +10,9 @@ export default function Login1() {
         console.log(name)
         console.log(pass)
         if (name === 'john' && pass === 'pass1234') {
-            setAccessState({ access: 'Access granted', className: 'success' });
+            setAccess({ access: 'Access granted', className: 'success' });
         } else {
-            setAccessState({ access: 'Access Denied', className: 'fail' });
+            setAccess({ access: 'Access Denied', className: 'fail' });
         }
     };
 
