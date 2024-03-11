@@ -1,28 +1,44 @@
-import React from 'react';
-import  {useState} from 'react';
+import React, { useState } from 'react';
 
 export default function Login1() {
-    const [access, setAccess] = useState({ access: "", className: "" });
+    const [username, setUsername] = useState('');
+    const [password, setPassword] = useState('');
+    const [access, setAccess] = useState({ message: '', className: '' });
 
-    const f1 = () => {
-        let name = document.getElementById('t1').value.trim();
-        let pass = document.getElementById('t2').value.trim();
-        console.log(name)
-        console.log(pass)
-        if (name === 'john' && pass === 'pass1234') {
-            setAccess({ access: 'Access granted', className: 'success' });
+    const handleSubmit = () => {
+        if (username === 'john' && password === 'pass1234') {
+            setAccess({ message: 'Access granted', className: 'success' });
         } else {
-            setAccess({ access: 'Access Denied', className: 'fail' });
+            setAccess({ message: 'Access denied', className: 'fail' });
         }
     };
 
     return (
-        <div>
-            <h1>Login Form</h1>
-            <input type='text' id='t1' placeholder="Username"></input><br /><br />
-            <input type='password' id='t2' placeholder="Password"></input><br /><br />
-            <button onClick={f1}>Submit</button>
-            <div className={access.className}>{access.access}</div>
-        </div>
+        <>
+           <div className='div'>
+                <h1>Login Form</h1>
+                <input
+                    type='text'
+                    placeholder='Username'
+                    value={username}
+                    onChange={(e) => setUsername(e.target.value)}
+                />
+                <br />
+                <br />
+                <input
+                    type='password'
+                    placeholder='Password'
+                    value={password}
+                    onChange={(e) => setPassword(e.target.value)}
+                />
+                <br />
+                <br />
+                <button onClick={handleSubmit}>Submit</button>
+            
+            </div>
+            <div className={`message ${access.className}`}>{access.message}</div>
+           
+        </>
     );
 }
+
