@@ -36,7 +36,7 @@ export default function Login1() {
                 <button onClick={handleSubmit}>Submit</button>
             
             </div>
-            <div className={`message ${access.className}`}>{access.message}</div>
+            <div className={access.className}>{access.message}</div>
            
         </>
     );
