@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 // import App5 from './App5';
 
-import App19 from './App19';
+import App20 from './App20';
 // import './Shoppingcart.css'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -26,7 +26,7 @@ root.render(
   // </React.StrictMode>
 
   // <React.StrictMode>
-    <App19  />
+    <App20  />
 //  </React.StrictMode> 
  
 );
