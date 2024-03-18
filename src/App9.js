@@ -292,10 +292,10 @@ export default function App6() {
 //   return 5;
 // };
 // export default function App6() {
-//   // const [count, setCount] = useState(() => {
-//   //   return complexFunction() //runs once
-//   // });
-//   const [count, setCount] = useState(complexFunction()); //runs on every render
+//   const [count, setCount] = useState(() => {
+//     return complexFunction() //runs once
+//   });
+//   // const [count, setCount] = useState(complexFunction()); //runs on every render
 //   return (
 //     <>
 //       <button onClick={() => setCount((prevState) => prevState - 1)}>-</button>
@@ -314,6 +314,19 @@ export default function App6() {
 //       <button onClick={() => setCount((prevState) => prevState - 1)}>-</button>
 //       <span>{count}</span>
 //       <button onClick={() => setCount((prevState) => prevState + 1)}>+</button>
+//     </>
+//   );
+// }
+
+
+// export default function App6() {
+//   const [con, Conn] = useState(1);
+//   console.log(Date());
+//   return (
+//     <>
+//       <button onClick={() => Conn((prev) => prev - 1)}>-</button>
+//       <span>{con}</span>
+//       <button onClick={() => Conn((prev) => prev + 1)}>+</button>
 //     </>
 //   );
 // }
